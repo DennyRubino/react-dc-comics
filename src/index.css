@@ -24,6 +24,8 @@ body {
 .img-header {
   margin: 10px;
   margin-left: 150px;
+  width: 70px;
+  height: 70px;
 }
 
 header {
@@ -34,6 +36,7 @@ header {
 
 .header-Container {
   max-width: 1200px;
+  height: 100px;
   background-color: white;
   display: flex;
   align-items: center;
@@ -46,12 +49,21 @@ header {
   display: flex;
   margin-left: auto;
 }
+
+.header-nav li {
+  cursor: pointer;
+}
+
+.header-nav li:hover {
+  text-decoration: underline;
+}
+
 /*-----------------
     MAIN
 ------------------*/
 .main-container-1 {
   background-color: black;
-  height: 130px;
+  height: 120px;
   max-width: 100%;
   color: white;
   display: flex;
@@ -66,7 +78,7 @@ header {
 
 .main-container-2 {
   background-color: #0282f9;
-  height: 130px;
+  height: 120px;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -80,15 +92,14 @@ header {
 
 .main-nav ul {
   list-style: none;
-  gap: 50px;
   display: flex;
+  gap: 50px;
   padding: 0;
 }
 .main-nav li {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   color: white;
   gap: 15px;
   white-space: nowrap;
@@ -97,3 +108,98 @@ header {
 /*-----------------
     FOOTER
 ------------------*/
+.footer-container-1 {
+  height: 300px;
+  width: 100%;
+  background-image: url(../public/img/footer-bg.jpg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  color: white;
+  position: relative;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+}
+
+.footer-img {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  height: 100%;
+}
+
+.footer-container-2 {
+  background-color: #303030;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.signup-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #0282f9;
+  color: white;
+}
+
+.channels {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.channels p {
+  font-weight: 800;
+  color: white;
+}
+
+.channels ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.channels img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.channels img:hover {
+  opacity: 0.7;
+}

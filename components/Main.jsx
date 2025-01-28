@@ -14,35 +14,35 @@ export default function Main() {
                 src="public/img/buy-comics-digital-comics.png"
                 className="main-img "
               ></img>
-              DIGITAL COMICS
+              <span>DIGITAL COMICS</span>
             </li>
             <li>
               <img
                 src="public/img/buy-comics-merchandise.png"
                 className="main-img "
               ></img>
-              DC MERCHANDISE
+              <span>DC MERCHANDISE</span>
             </li>
             <li>
               <img
                 src="public/img/buy-comics-subscriptions.png"
                 className="main-img "
               ></img>
-              SUBSCRIPTION
+              <span>SUBSCRIPTION</span>
             </li>
             <li>
               <img
                 src="public/img/buy-comics-shop-locator.png"
                 className="main-img "
               ></img>
-              COMIC SHOP LOCATOR
+              <span>COMIC SHOP LOCATOR</span>
             </li>
             <li>
               <img
-                scr="public/img/buy-dc-power-visa.svg"
+                src="public/img/buy-dc-power-visa.svg"
                 className="main-img "
               ></img>
-              DC POWER VISA
+              <span> DC POWER VISA</span>
             </li>
           </ul>
         </nav>
