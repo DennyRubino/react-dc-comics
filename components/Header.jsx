@@ -1,23 +1,26 @@
+import Logo from "../components/Logo";
+const navLinks = [
+  "CHARACTERS",
+  "COMICS",
+  "MOVIES",
+  "TV",
+  "GAMES",
+  "COLLECTIBLES",
+  "VIDEOS",
+  "FANS",
+  "NEWS",
+  "SHOP",
+];
+
 export default function Header() {
   return (
     <header className="header-Container">
-      <img
-        className="img-header"
-        src="public/img/dc-logo.png"
-        alt="DC logo"
-      ></img>
+      <Logo width={60} />
       <nav>
         <ul className="header-nav">
-          <li>CHARACTERS</li>
-          <li>COMICS</li>
-          <li>MOVIES</li>
-          <li>TV</li>
-          <li>GAMES</li>
-          <li>COLLECTIBLES</li>
-          <li>VIDEOS</li>
-          <li>FANS</li>
-          <li>NEWS</li>
-          <li>SHOP</li>
+          {navLinks.map((link, index) => (
+            <li key={index}>{link}</li>
+          ))}
         </ul>
       </nav>
     </header>
