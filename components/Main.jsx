@@ -1,6 +1,9 @@
 export default function Main() {
   return (
     <main>
+      <hero>
+        <div className="hero-container"></div>
+      </hero>
       <div className="main-container-1">
         <p className="content-container-1">
           ---{">"}Content goes here {"<"}---
