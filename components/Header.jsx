@@ -1,16 +1,5 @@
 import Logo from "../components/Logo";
-const navLinks = [
-  "CHARACTERS",
-  "COMICS",
-  "MOVIES",
-  "TV",
-  "GAMES",
-  "COLLECTIBLES",
-  "VIDEOS",
-  "FANS",
-  "NEWS",
-  "SHOP",
-];
+import navLinks from "../data/Header-nav";
 
 export default function Header() {
   return (
@@ -19,7 +8,7 @@ export default function Header() {
       <nav>
         <ul className="header-nav">
           {navLinks.map((link, index) => (
-            <li key={index}>{link}</li>
+            <li key={index}>{link.text}</li>
           ))}
         </ul>
       </nav>
